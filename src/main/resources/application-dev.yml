@@ -1,0 +1,23 @@
+server:
+  port: 8090
+spring:
+  data:
+    mongodb:
+      host: "127.0.0.1"
+      port: 27017
+  redis:
+    host: "127.0.0.1"
+    password: "123456"
+    port: 6379
+  application:
+    name: "testSpringBoot"
+  session:
+    store-type: redis
+    redis:
+      flush-mode: on_save
+      namespace: "spring:session"
+    timeout: 100
+springfox:
+  documentation:
+    swagger-ui:
+      enabled: true
